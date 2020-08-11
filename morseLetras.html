@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="background-color: darkgray;">
+        <nav class="navbar navbar-light bg-light rounded-right rounded-left" id="headContainer">
+            <a class="navbar-brand" href="index.html">LetrasMorse</a>
+            <a class="navbar-brand" href="#">MorseLetras</a>
+        </nav>
+        <main class="ml-3">
+            <script type="text/javascript" src="script.js"></script>
+            <h3 class="text-monospace mt-4" id="whitetext">
+                Capturador de Morse
+            </h3>
+            <h4 class="text-monospace mt-2" id="whitetext">
+                Favor de poner espacio entre las letras y 2 espacios entre las palabras
+            </h4>
+            <form>
+                <input type="search" class="form-control barraBusqueda" 
+                placeholder="introduzca morse" id="MorseNuevo" required>
+                <button type="button" onclick="morseTranslate();" class="btn btn-outline-light my-2">Traducir</button>
+                
+            </form>
+            <!--Display the text here-->
+            <div id="traduccionLetras" class="text-monospace">
+                
+            </div>
+        </main>
+        <footer>
+            <nav class="navbar navbar-expand-sm navbar-light" 
+            style="clear:both;
+            background-color: #0e1b63;
+            bottom: 0;
+            position: fixed;
+            width:100%;">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <p class="navbar-brand mb-n1" id="whitetext">
+                            mexslacker dev
+                        </p>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
+
+<!--
+    Para una traduccion correcta utilize espacios entre las palabras
+
+    <h5>Hola capturador = ....---.-...- <br>-.-..-.--.-..-.-..--..---.-.</h5>
+
+    Para una pagina entorno al usuario verificar que tipo de nomeclatura de
+morse esta utilizando para darle una traduccion buena o para acercarnos lo
+ mas posible a su traduccion, algunas personas podrian seguir un estandar 
+o poner un espacio despues de cada palabra hacer un algoritmo que solucionara 
+este problema seria bastante util para el usuario final-->

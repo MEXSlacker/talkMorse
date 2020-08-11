@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-dark bg-dark rounded-right rounded-left" id="headContainer">
+                <a class="navbar-brand" href="#">LetrasMorse</a>
+                <a class="navbar-brand" href="morseLetras.html">MorseLetras</a>
+            </nav>
+        </header>
+
+        <main class="ml-3">
+            <script type="text/javascript" src="script.js"></script>
+            <h3 class="text-monospace mt-4">
+                Capturador
+            </h3>
+            <form>
+                <input type="search" class="form-control barraBusqueda"
+                placeholder="Oracion o Palabra" id="newText">
+                <button type="button" onclick="translate();" class="btn btn-outline-success my-2">Traducir</button>
+            </form>
+            <div id="traduccion" class="text-monospace">
+                
+            </div>
+        </main>
+        <footer>
+            <nav class="navbar navbar-expand-sm navbar-light" 
+            style="clear:both;
+            background-color: #0e1b63;
+            bottom: 0;
+            position: fixed;
+            width:100%;">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <p class="navbar-brand mb-n1" id="whitetext">
+                            mexslacker dev
+                        </p>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+        </div>
+    </body>
+</html>
+
+<!--
+    <main class="ml-3">
+            <h3 class="text-monospace mt-4">
+                Capturador
+            </h3>
+            <form onsubmit="return translate();">
+                <input type="search" class="form-control barraBusqueda"
+                placeholder="Oracion o Palabra" id="newText" required>
+                <input type="submit" class="btn btn-outline-success my-2"
+                value="Traducir">
+            </form>
+            Display the text here
+            <div id="traduccion" class="text-monospace">
+                
+            </div>
+        </main>
+    -->
