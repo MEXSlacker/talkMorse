@@ -20,7 +20,7 @@
             </h4>
             <form>
                 <input type="search" class="form-control barraBusqueda" 
-                placeholder="introduzca morse" id="MorseNuevo" required>
+                placeholder="introduzca morse" id="MorseNuevo" onkeypress="return enterChecker(event)">
                 <button type="button" onclick="morseTranslate();" class="btn btn-outline-light my-2">Traducir</button>
                 
             </form>

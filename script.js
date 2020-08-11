@@ -61,6 +61,21 @@ function morseLook(val){
 function getKeyByValue(object, value) {
     return Object.keys(object).find(key => object[key] === value);
 }
+
+function enterCheck(e) {
+    if(e.key==="Enter"){
+        e.preventDefault();
+        translate();
+    }
+}
+function enterChecker(e) {
+    if(e.key==="Enter"){
+        e.preventDefault();
+        morseTranslate();
+    }
+}
+
+
 function translate(){
     var textoNuevo = document.getElementById('newText').value.toLowerCase();
     var reg=/[^a-zA-Z0-9\,\.\/\'\"\?\-\(\)\@\á\ä\é\ñ\ö\ü\ ]+/;

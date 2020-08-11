@@ -14,13 +14,14 @@
         </header>
 
         <main class="ml-3">
-            <script type="text/javascript" src="script.js"></script>
+            <script type="text/javascript" src="script.js">
+            </script>
             <h3 class="text-monospace mt-4">
                 Capturador
             </h3>
             <form>
                 <input type="search" class="form-control barraBusqueda"
-                placeholder="Oracion o Palabra" id="newText">
+                placeholder="Oracion o Palabra" id="newText" onkeypress="return enterCheck(event)">
                 <button type="button" onclick="translate();" class="btn btn-outline-success my-2">Traducir</button>
             </form>
             <div id="traduccion" class="text-monospace">
